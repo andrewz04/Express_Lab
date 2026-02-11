@@ -8,8 +8,12 @@ app.get('/' ,(req, res) => {
     res.render('index', {userName: 'Andrew'});
 });
 
-app.get('/status', (req, res) =>{
-    res.Status(500).send('hi');
-});
+app.get('/users', (req, res)=> {
+    res.send('User List');
+})
+
+app.get('/users/new', (req,res)=> {
+    res.send("User New Form");
+})
 
 app.listen(3030)
