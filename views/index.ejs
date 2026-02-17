@@ -4,8 +4,11 @@
   <title>my page</title> 
 </head>
 <body>
-<h1> Welcome to my page</h1>
-<p> insert words here</p>
-<p> Hello <%= locals.userName ?? New User %> </p>
+  <h1> Welcome to my page</h1>
+  <p> insert words here</p>
+  <p> Hello</p>
+  <% for(let i = 0; i<8; i++){ %>
+      <p><img width = "200" src = "book.png" alt = "Stack of Books"> </p>
+  <% } %>
 </body>
 </html>
