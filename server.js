@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express(); //calling express as a function
-const userRouter = require('/routes/user');
-const wordRouter = require('/routes/words');
+const userRouter = require('./routes/user');
+const wordRouter = require('./routes/words');
 
 app.set('view engine', 'ejs');
 app.use(express.static("public"));

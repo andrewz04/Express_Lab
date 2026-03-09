@@ -9,4 +9,4 @@ router.get('/new', (req,res)=> {
     res.send("User New Form");
 })
 
-modules.exports = router;
+module.exports = router;

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title> All Words</title>
+</head>
+<body>
+    <h1>All words in our dictionary</h1>
+    <p> Here is your words</p>
+    <% allWords.forEach(word => {%>
+    <li><%=word.word %> - <%= word.part %> - <%= word.definition%></li>
+   <% }) %>
+    
+</body>
+</html>
